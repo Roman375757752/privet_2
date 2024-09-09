@@ -1,0 +1,4 @@
+﻿  Dovgalyuk_1.cpp
+C:\Users\Roman\Desktop\Dovgalyuk_1\Dovgalyuk_1.cpp(77,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Roman\Desktop\Dovgalyuk_1\Dovgalyuk_1.cpp(225,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Dovgalyuk_1.vcxproj -> C:\Users\Roman\Desktop\Dovgalyuk_1\x64\Debug\Dovgalyuk_1.exe
