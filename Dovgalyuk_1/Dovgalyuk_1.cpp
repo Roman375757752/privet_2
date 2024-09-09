@@ -13,39 +13,29 @@ void printArray(int* array, int size) {
 }
 
 void shiftRight(int* array, int size, int shift) {
-    // Для каждого шага сдвигаем элементы массива вправо, заполняя освободившиеся ячейки нулями
     for (int s = 0; s < shift; ++s) {
-        // Сохраняем последний элемент, так как он сдвинется вправо
         int last = array[size - 1];
 
-        // Сдвигаем все элементы вправо
         for (int i = size - 1; i > 0; --i) {
             array[i] = array[i - 1];
         }
 
-        // Освободившаяся ячейка заполняется нулём
         array[0] = 0;
 
-        // Выводим массив после каждого шага
         printArray(array, size);
     }
 }
 
 void shiftLeft(int* array, int size, int shift) {
-    // Для каждого шага сдвигаем элементы массива влево, заполняя освободившиеся ячейки нулями
     for (int s = 0; s < shift; ++s) {
-        // Сохраняем первый элемент, так как он сдвинется влево
         int first = array[0];
 
-        // Сдвигаем все элементы влево
         for (int i = 0; i < size - 1; ++i) {
             array[i] = array[i + 1];
         }
 
-        // Освободившаяся ячейка заполняется нулём
         array[size - 1] = 0;
 
-        // Выводим массив после каждого шага
         printArray(array, size);
     }
 }
